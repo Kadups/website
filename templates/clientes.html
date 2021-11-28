@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/static/favicon/favicon.png" type="image/png">
+    <title>Clientes</title>
+    <link rel="stylesheet" href="/static/form.css">
+ 
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+
+         <div class="collapse navbar-collapse" id="navbarCollapse">
+             <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                 <li class="nav-item">
+                   <a class="nav-link active" aria-current="page" href="/">Home</a>
+         </div>
+       </div>
+    </nav>
+    <div>
+        <h1 id="titulo">Solicite orçamento</h1>
+        <p id="subtitulo">Complete o formulário abaixo: </p>
+    <br>
+    </div>
+    <form action="https://api.staticforms.xyz/submit" method="POST">
+        <input type="hidden" name="accessKey" value="cee78b56-7694-4ff8-9484-53cfee0cc104">
+        <fieldset class="grupo">
+        <div class="campo">
+            <label for="nome"><strong>Nome completo</strong></label>
+            <input type="text" name="name" id="nome" required>
+        </div>
+        <div class="campo">
+            <label for="tel"><strong>Telefone</strong></label>
+            <input type="tel" name="phone" id="tel" required>
+        </div>
+        </fieldset>
+
+        <div class="campo">
+            <label for="email"><strong>E-mail</strong></label>
+            <input type="email" name="email" id="email" required>
+        </div>
+
+        <fieldset class="grupo">
+        <div class="campo">
+            <label for="contato"><strong>Escreva sua mensagem aqui</strong></label>
+            <textarea name="message" id="contato" cols="50" rows="8"></textarea>
+        </div>
+        </fieldset>
+        <button type="submit" class="botao">Enviar mensagem</button>
+    </form>
+</body>
+</html>
